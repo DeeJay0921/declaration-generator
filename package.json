@@ -1,0 +1,37 @@
+{
+  "name": "declaration-generator",
+  "version": "1.0.0",
+  "description": "Accoding to JSON/markdown, auto generate typescript declaration file",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && node build/index.js",
+    "start:dev": "nodemon",
+    "build": "rimraf ./build && tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeeJay0921/declaration-generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DeeJay0921/declaration-generator/issues"
+  },
+  "homepage": "https://github.com/DeeJay0921/declaration-generator#readme",
+  "dependencies": {
+    "fs-extra": "^9.0.0"
+  },
+  "bin": {
+    "declare": "bin/start.ts"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.0",
+    "@types/node": "^14.0.1",
+    "nodemon": "^2.0.4",
+    "rimraf": "^3.0.2",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.9.2"
+  }
+}
